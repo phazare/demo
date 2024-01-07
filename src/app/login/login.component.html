@@ -1,0 +1,31 @@
+<section>
+  <div class="container">
+    <form [formGroup]="loginForm">
+      <div class="form-group mb-4">
+        <span for="username" class="col-4 fs-5 fw-bold">Username </span>
+        <input
+          type="text"
+          formControlName="username"
+          class="form-control col-4"
+        />
+      </div>
+      <div class="form-group">
+        <span for="password" class="col-4 fs-5 fw-bold">Password </span>
+        <input
+          type="password"
+          formControlName="password"
+          class="form-control col-4"
+        />
+      </div>
+      <div class="form-group justify-content-center mt-5">
+        <button
+          class="btn btn-primary"
+          [disabled]="loginForm.invalid"
+          (click)="login()"
+        >
+          Login
+        </button>
+      </div>
+    </form>
+  </div>
+</section>

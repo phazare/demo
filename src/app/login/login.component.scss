@@ -1,0 +1,25 @@
+section {
+  // background-image: url("assets/images/login-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 97vh;
+  width: 100%;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 80vh;
+    .form-control {
+      display: inline;
+      max-width: 70%;
+      width: auto;
+    }
+    .form-group {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
